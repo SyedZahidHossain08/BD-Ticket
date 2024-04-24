@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>BdTicket</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -11,17 +11,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
 </head>
 <body>
-    <div class="mother">
+    <div class="main">
 
-       <div class="child1">
+       <div class="logo">
         <div style="padding-left: 570px;"> <img src="Image/logo-bd.png" height="50px" width="120px"></div> 
        </div>
 
 
-       <div class="child2">
-         <div class="sub-child">
-            <div class="sub-childtwo">
-            <div class="d1 activetwo ">
+       <div class="main-dev">
+         <div class="za">
+            <div class="za2">
+            <div class="za3 activeza ">
 
                 <div class="icons">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +34,7 @@
                 </div>
             </div>
 
-            <div class="d2">
+            <div class="za4">
 
                  <div class="icons">
                     <img src="Image/air.svg" class="sizes">
@@ -44,7 +44,7 @@
                 </div>
             </div>
        
-            <div class="d2">
+            <div class="za4">
                 <div class="icons">
                     <img src="Image/launch.svg" class="sizes">
                 </div>
@@ -54,7 +54,7 @@
 
             </div>
 
-            <div class="d3">
+            <div class="za5">
                 <div class="icons">
                     <img src="Image/hotel.svg" class="sizes">
                 </div>
@@ -65,13 +65,13 @@
             </div>
          </div>
        </div>
-       <div class="child3">
+       <div class="divza">
           
-    <div class="sub-child1">
-        <div class="dev1">
-            <div class="sub-dev1">
-                <div class="destandiv"> 
-                    <span class="destan"> GOING FROM</span>
+    <div class="divza-1">
+        <div class="divza-2">
+            <div class="divza-3">
+                <div class="divza-4"> 
+                    <span class="divza-5"> GOING FROM</span>
                     </div>
     
                     <div class="select-box " >
@@ -94,17 +94,17 @@
                
             </div>
 
-            <div class="sub-dev2">
-                <div style="padding: 10px 0px 0px 8px;" onclick="sweping()">
-                <img src="Image/swap-icon.svg" height="25px" width="25px">
+            <div class="za-dev">
+                <div style="padding: 10px;" onclick="sweping()">
+                <img src="Image/swap-icon.svg" >
             </div>
             </div>
 
 
 
-            <div class="sub-dev3">
-                <div class="destandivs"> 
-                    <span class="destan">GOING TO</span>
+            <div class="za-dev-1">
+                <div class="za-dev-2"> 
+                    <span class="divza-5">GOING TO</span>
                     </div>
 
                     <div class="select-boxtwo " >
@@ -128,8 +128,8 @@
         </div>
         <div class="dev2">
          <div class="dev2-child1">
-            <div class="destandiv"> 
-                <span class="destan"> JOURNEY DATE</span>
+            <div class="divza-4"> 
+                <span class="divza-5"> JOURNEY DATE</span>
                 </div>
 
                
@@ -140,8 +140,8 @@
          </div>
          <div class="dev2-child2">
 
-            <div class="destandiv"> 
-                <span class="destan"> RETURN DATE</span>
+            <div class="divza-4"> 
+                <span class="divza-5"> RETURN DATE</span>
                 </div>
 
                 <div class="relative max-w-sm pl-5">
@@ -175,7 +175,7 @@
         </div>
        </div>
        <div class="child5" >
-        <button style="color: white;" onclick="datachacking()">
+        <button class="sbus" style="color: white;" onclick="datachacking()">
            <span style="padding-left: 13px;">Search bus</span> 
         </button>
      
@@ -185,7 +185,7 @@
     
 
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-    <table class="w-full text-sm text-left rtl:text-right text-blue-100 dark:text-blue-100">
+    <table class="w-full text-sm text-center rtl:text-right text-blue-100 dark:text-blue-100">
         <thead class="text-xs text-white uppercase bg-red-600 border-b border-blue-400 dark:text-white">
             <tr>
                 <th scope="col" class="px-6 py-3">
@@ -198,15 +198,16 @@
                     DATE
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    FARE
+                    PRICE
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Action
+                    STATUS
                 </th>
+                
             </tr>
         </thead>
         <tbody>
-            <tr class="bg-red-600 border-b border-black-400 hover:bg-red-300">
+            <tr class="bg-red-500 border-b border-black-400 hover:bg-red-600">
                 <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap dark:text-black-500">
                    <span id="form"> </span>
                 </th>

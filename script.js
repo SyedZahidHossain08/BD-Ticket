@@ -4,49 +4,49 @@ const datas=[
     {
         "from": "Dhaka",
         "to": "Chittagong",
-        "fare": 1100,
+        "price": 1100,
         "date":"11-06-24"
     },
     {
         "from": "Dhaka",
         "to": "Chittagong",
-        "fare": 1100,
+        "price": 1100,
         "date":"30-04-24"
     },
     {
         "from": "Dhaka",
         "to": "Chittagong",
-        "fare": 1100,
+        "price": 1100,
         "date":"01-05-24"
     },
     {
         "from": "Barisal",
         "to": "Chittagong",
-        "fare": 900,
+        "price": 900,
         "date":"11-05-24"
     },
     {
         "from": "Barisal",
         "to": "Chittagong",
-        "fare": 1200,
+        "price": 1200,
         "date":"21-05-24"
     },
     {
         "from": "Barisal",
         "to": "Chittagong",
-        "fare": 900,
+        "price": 900,
         "date":"14-05-24"
     },
     {
         "from": "Barisal",
         "to": "Rajshahi",
-        "fare": 1900,
+        "price": 1900,
         "date":"28-04-24"
     },
     {
         "from": "Barisal",
         "to": "Rajshahi",
-        "fare": 1900,
+        "price": 1900,
         "date":"02-05-24"
     }
 ]
@@ -92,7 +92,7 @@ function datachacking(){
          gfrom.innerHTML=datas[i].from;
          gto.innerHTML=datas[i].to;
          gdates.innerHTML=datas[i].date;
-         gfar.innerHTML=datas[i].fare;
+         gfar.innerHTML=datas[i].price;
         
         setInterval(loaddder, 1000);
          break;
